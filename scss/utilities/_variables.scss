@@ -1,0 +1,78 @@
+//══════════════════════════════════════
+//					 GLOBAL VARIABLES
+//══════════════════════════════════════
+
+// Font Stacks
+$font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+// Descriptive Base Colors
+$white  : #fff;
+$black  : #000;
+$gray   : #808080;
+$viking : #58e1c1;
+
+// Descriptive Button Colors
+$malibu  				: #51ddfc;
+$emerald        : #63cc82;
+$sunglo         : #e4757a;
+$coral          : #fd7856;
+$purple-majesty : #927bc1;
+
+// Descriptive Grid colors
+$french-lilac 	 : #deb2ee;
+$anakiwa			   : #7ee6fd;
+$vista-blue			 : #88d9a0;
+$shakespeare	   : #3fabca;
+$sea-pink        : #ec9fa3;
+$vivid-tangerine : #fd9f85;
+$riptied				 : #80e8d1;
+
+// Color Usage
+$color-primary   : $viking;
+$color-secondary : $malibu;
+$color-accent    : $emerald;
+$color-shadow    : rgba($black, .2);
+
+// Color Palette Modifiers
+$color-palettes: (
+	gray: (
+		xx-light : lighten($gray, 30%),
+		x-light  : lighten($gray, 20%),
+	  light    : lighten($gray, 10%),
+	  base     : $gray,
+	 	dark     : darken($gray, 10%),
+	 	x-dark   : darken($gray, 20%),
+		xx-dark  : darken($gray, 30%)
+	),
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
+	)
+);
+
+// UI Colors
+$ui-colors: (
+	default : $malibu,
+	success : $emerald,
+	error   : $sunglo,
+	warning : $coral,
+	info    : $purple-majesty
+);
+
+// Text
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Path to Iconography
+$path--rel      : "../images";
