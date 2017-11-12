@@ -14,6 +14,11 @@ $font-weight--medium     : 400;
 $font-weight--bold       : 700;
 $font-weight--ultra-bold : 900;
 
+// Typography Defaults
+$base__font-size    : 18px;
+$base__line-height  : 26px;
+$base__letter-space : 1px;
+
 // Descriptive Base Colors
 $white  : #fff;
 $black  : #000;
@@ -47,9 +52,9 @@ $color-palettes: (
 	gray: (
 		xx-light : lighten($gray, 30%),
 		x-light  : lighten($gray, 20%),
-	  light    : lighten($gray, 10%),
+	  light    : lighten($gray, 8%),
 	  base     : $gray,
-	 	dark     : darken($gray, 10%),
+	 	dark     : darken($gray, 8%),
 	 	x-dark   : darken($gray, 20%),
 		xx-dark  : darken($gray, 30%)
 	),
@@ -69,10 +74,31 @@ $ui-colors: (
 	info    : $purple-majesty
 );
 
-// Text
-$base__font-size : 16px;
-$base__line      : 24px;
-$letter-space    : 1px;
+$border--rounded-corners : 5px;
 
-// Path to Iconography
-$path--rel      : "../images";
+// Grid Global variables
+$g-col-count				 : 12;
+$g-col-width				 : 50px;
+$g-gutter-width			 : 12px;
+$container-max-width : 1200px;
+
+$grid-colors:
+	darken($sea-pink, 10%),						// .grid__col--1
+	lighten($vivid-tangerine, 10%),		// .grid__col--2
+	$french-lilac, 										// .grid__col--3
+	$anakiwa,													// .grid__col--4
+	$vista-blue,											// .grid__col--5
+	$shakespeare,											// .grid__col--6
+	$sea-pink,												// .grid__col--7
+	$vivid-tangerine,									// .grid__col--8
+	darken($french-lilac, 10%),				// .grid__col--9
+	lighten($anakiwa, 10%),						// .grid__col--10
+	darken($vista-blue, 10%),					// .grid__col--11
+	$riptied													// .grid__col--12
+;
+
+// Media Query Map
+$breakpoints: (
+  tablet  : 768px,
+  desktop : 1200px,
+);

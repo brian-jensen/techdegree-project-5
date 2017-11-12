@@ -1,3 +1,21 @@
 //══════════════════════════════════════
 //    				  BUTTONS
 //══════════════════════════════════════
+@each $btn-type, $color in $ui-colors {
+  .btn--#{$btn-type} {
+    background-color: $color;
+
+    @if $btn-type == "default" {
+      margin-top: 18px;
+    }
+
+    &:hover {
+      @extend %button-inset;
+      background-color: darken($color, 12%);
+    }
+  }
+}
+
+[class*="btn--"] {
+  @extend %buttons;
+}

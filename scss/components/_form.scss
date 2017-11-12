@@ -1,3 +1,23 @@
 //══════════════════════════════════════
 //    				FORM ELEMENTS
 //══════════════════════════════════════
+
+.form {
+  & .headline--secondary {
+    @extend %condensed;
+  }
+  @include double-bem(label, hidden) {
+    display: none;
+  }
+  @include e(input) {
+    @extend %block-element;
+    @extend %center-element;
+    @include column-spacing($padding-left: em(20px));
+    @include row-spacing(em(30px), em(30px), em(15px));
+    font-weight: $font-weight--bold;
+    font-size: em(15px);
+    border: 0;
+    border-bottom: 6px solid $color-primary;
+    width: 90%;
+  }
+}
