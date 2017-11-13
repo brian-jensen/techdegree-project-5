@@ -5,8 +5,19 @@
   .btn--#{$btn-type} {
     background-color: $color;
 
-    @if $btn-type == "default" {
-      margin-top: 18px;
+    @include mq(desktop) {
+      @if $btn-type == "error" {
+        width: 165px;
+      }
+      @else if $btn-type == "warning" {
+        width: 185px;
+      }
+      @else if $btn-type == "info" {
+        width: 150px;
+      }
+      @else {
+        width: 175px;
+      }
     }
 
     &:hover {
@@ -18,4 +29,8 @@
 
 [class*="btn--"] {
   @extend %buttons;
+  @include mq(desktop) {
+    @include column-spacing(em(28px));
+    display: inline-block;
+  }
 }

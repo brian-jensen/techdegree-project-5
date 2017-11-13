@@ -17,5 +17,8 @@
     @include column-spacing($padding-left: em(12px));
     @include row-spacing(em(15px),em(17px),em(12px));
     border: 1px solid palette(gray, xx-light);
+    @include mq(tablet) {
+      max-width: 100%;
+    }
   }
 }

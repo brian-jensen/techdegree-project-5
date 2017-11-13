@@ -7,6 +7,9 @@
   @include row-spacing(em(5px));
   @include column-spacing($padding-left: em(25px));
   max-width: $container-max-width;
+  @include mq(tablet) {
+    margin-bottom: em(75px);
+  }
 }
 
 .grid__row {
@@ -24,9 +27,16 @@
     font-weight: $font-weight--medium;
     color: palette(gray, dark);
     font-size: em(15px);
+    @include mq(tablet) {
+      padding-left: 0;
+      text-align: center;
+
+      &.centered {
+        margin: 0 auto;
+      }
+    }
   }
 }
-
 @mixin grid-background-color {
   @each $current-color in $grid-colors {
     $i: index($grid-colors, $current-color);
@@ -36,7 +46,6 @@
     }
   }
 }
-
 @mixin g-columns {
   @for $i from 1 through $g-col-count {
     $context: g-context($g-col-width, $g-col-count ,$g-gutter-width) !global;
@@ -59,10 +68,9 @@
   @include row-spacing(em(47px),null);
 }
 
-.grid__row--12 {
-  @extend %condensed;
-}
-
 .card {
   @extend %condensed;
+  @include mq(tablet) {
+    @include column-spacing(0px, 0px, 0px, 46px);
+  }
 }

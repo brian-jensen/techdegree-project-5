@@ -25,4 +25,7 @@
   font-style: italic;
   border-left: 9px solid $color-primary;
   font-size: em(26px);
+  @include mq(tablet) {
+    margin-bottom: em(30px);
+  }
 }
