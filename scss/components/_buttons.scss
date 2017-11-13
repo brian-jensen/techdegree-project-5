@@ -5,7 +5,7 @@
   .btn--#{$btn-type} {
     background-color: $color;
 
-    @include mq(desktop) {
+    @include mq(tablet) {
       @if $btn-type == "error" {
         width: 165px;
       }
@@ -29,7 +29,7 @@
 
 [class*="btn--"] {
   @extend %buttons;
-  @include mq(desktop) {
+  @include mq(tablet) {
     @include column-spacing(em(28px));
     display: inline-block;
   }

@@ -26,6 +26,7 @@
   border-left: 9px solid $color-primary;
   font-size: em(26px);
   @include mq(tablet) {
+    padding-left: em(25px);
     margin-bottom: em(30px);
   }
 }

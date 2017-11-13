@@ -462,7 +462,7 @@ ul {
 
 .btn--default {
   background-color: #51ddfc; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     .btn--default {
       width: 175px; } }
   .btn--default:hover {
@@ -470,7 +470,7 @@ ul {
 
 .btn--success {
   background-color: #63cc82; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     .btn--success {
       width: 175px; } }
   .btn--success:hover {
@@ -478,7 +478,7 @@ ul {
 
 .btn--error {
   background-color: #e4757a; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     .btn--error {
       width: 165px; } }
   .btn--error:hover {
@@ -486,7 +486,7 @@ ul {
 
 .btn--warning {
   background-color: #fd7856; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     .btn--warning {
       width: 185px; } }
   .btn--warning:hover {
@@ -494,13 +494,13 @@ ul {
 
 .btn--info {
   background-color: #927bc1; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     .btn--info {
       width: 150px; } }
   .btn--info:hover {
     background-color: #7051ad; }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   [class*="btn--"] {
     margin-left: 1.5555555556em;
     margin-right: 1.5555555556em;
@@ -628,7 +628,7 @@ ul {
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px;
-    padding-right: 46px; } }
+    padding-right: 40px; } }
 
 .img--logo {
   margin-top: 1.3888888889em;
@@ -694,6 +694,7 @@ ul {
   font-size: 1.4444444444em; }
   @media only screen and (min-width: 768px) {
     .blockquote {
+      padding-left: 1.3888888889em;
       margin-bottom: 1.6666666667em; } }
 
 /*# sourceMappingURL=styles.css.map */
